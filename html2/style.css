@@ -1,0 +1,100 @@
+
+body{
+    background-color: rgb(224, 224, 224);
+    display :flexbox;
+    height: fit-content;
+    
+}
+h {
+    color: rgb(39, 36, 32);
+    font-size:large;
+    position: relative;
+    left: 50%;
+    
+}
+
+svg {
+    display: block;
+    height:fit-content;
+    position:relative;
+    margin-top: 20px;
+}
+
+.Toraja-utara{
+    fill:#ffcb5f;}
+.Tana-Toraja{
+    fill:#fffd8a;}
+
+
+.Toraja-utara,.Tana-Toraja{
+    stroke:#6e6e6e;
+    stroke-miterlimit:10;
+    stroke-width:0.85px;}
+
+
+svg path:hover {
+    fill: rgb(81, 224, 243);
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.form-group {
+    display:inline-block;
+    align-items:center;
+    position: relative;
+    left:  20%;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+  .form-group label {
+    margin-right: 10px;
+  }
+
+  .copy-button {
+    margin-left: 20px;
+    fill: rgb(150, 126, 97);
+  }
+
+  .kecamatan {
+    color: #241e17;
+    text-align: center;
+    margin-right: auto;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
